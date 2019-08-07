@@ -12,7 +12,7 @@ Character data
 
 Character data (strings) may be stored with VARCHAR(STRING), CHAR, ENUM, and they support charset and collation.
 
-Charset(character set, codeset) controls how characters are stored (on any type of storage) as bytes, or how a series of bytes forms a character. CUBRID supports ISO-88591-1, UTF-8 and EUC-KR charsets. For UTF-8, we support only the Unicode characters up to codepoint 10FFFF (encoded on up to four bytes). For instance, the character "Ç" is encoded in codeset ISO-8859-1 using a single byte (C7), in UTF-8 is encoded with 2 bytes (C3 88), while in EUC-KR this character is not available.
+Charset(character set, codeset) controls how characters are stored (on any type of storage) as bytes, or how a series of bytes forms a character. CUBRID supports ISO-8859-1, UTF-8 and EUC-KR charsets. For UTF-8, we support only the Unicode characters up to codepoint 10FFFF (encoded on up to four bytes). For instance, the character "Ç" is encoded in codeset ISO-8859-1 using a single byte (C7), in UTF-8 is encoded with 2 bytes (C3 88), while in EUC-KR this character is not available.
 
 Collation decides how strings compare. Most often, users require case insensitive and case sensitive comparisons. For instance, the strings "ABC" and "abc" are equal in a case insensitive collation, while in a case sensitive collation, they are not, and depending on other collation settings, the relationship can be "ABC" < "abc" , or "ABC" > "abc".
 
